@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadiomanTest {
 
     @Test
-    void setRadioStation1 () {
+     void setRadioStation1 () {
         Radioman radio = new Radioman();
         radio.setCurrentRadioStation(6);
 
@@ -23,6 +23,28 @@ class RadiomanTest {
         radio.setCurrentRadioStation(8);
 
         int expected = 8;
+        int actual = radio.getCurrentRadioStation();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void setRadioStation3 () {
+        Radioman radio = new Radioman();
+        radio.setCurrentRadioStation(9);
+
+        int expected = 9;
+        int actual = radio.getCurrentRadioStation();
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void setRadioStation4 () {
+        Radioman radio = new Radioman();
+        radio.setCurrentRadioStation(9);
+
+        int expected = 9;
         int actual = radio.getCurrentRadioStation();
 
         assertEquals(expected, actual);

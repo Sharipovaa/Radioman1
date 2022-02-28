@@ -9,11 +9,9 @@ public class Radioman {
     }
 
     public void setCurrentRadioStation(int currentRadioStation) {
-        if (currentRadioStation > 9) {
-            return;
+        if (currentRadioStation >= 0) {
         }
-        if (currentRadioStation < 0) {
-            return;
+        if (currentRadioStation < 10) {
         }
         this.currentRadioStation = currentRadioStation;
     }
