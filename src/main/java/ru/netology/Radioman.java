@@ -34,37 +34,20 @@ public class Radioman {
         }
     }
 
-    public void setCurrentRadioStation1(int newCurrentRadioStation) {
-        if (newCurrentRadioStation > 9) {
-            return;
-        }
-        if (newCurrentRadioStation < 0) {
-            return;
-        }
-        this.currentRadioStation = newCurrentRadioStation;
-    }
-
     public int getCurrentVolume() {
         return currentVolume;
     }
+
 
     public void setCurrentVolume(int currentVolume) {
         this.currentVolume = currentVolume;
     }
 
-    public void increaseVolumeMax() {
+    public void increaseVolume() {
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
         } else {
             currentVolume = 10;
-        }
-    }
-
-    public void increaseVolumeMin() {
-        if (currentVolume > 0) {
-            currentVolume = currentVolume - 1;
-        } else {
-            currentVolume = 0;
         }
     }
 
@@ -75,4 +58,5 @@ public class Radioman {
             currentVolume = 0;
         }
     }
+
 }
